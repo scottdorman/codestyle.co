@@ -1,7 +1,22 @@
-﻿{
+{
     "title": "General",
     "icon": "fa fa-file-text-o",
     "sections": [
+        {
+            "title": "Editor preferences",
+            "shown": true,
+            "markdown": "editor-prefs.md",
+            "links": [
+                {
+                    "url": "https://github.com/twbs/bootstrap/blob/master/.editorconfig",
+                    "title": "An example EditorConfig file in Bootstrap"
+                },
+                {
+                    "url": "http://editorconfig.org/",
+                    "title": "Learn more about EditorConfig"
+                }
+            ]
+        },
         {
             "title": "Comments",
             "shown": true,
