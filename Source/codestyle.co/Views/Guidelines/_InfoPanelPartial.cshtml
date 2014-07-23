@@ -1,0 +1,37 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+
+@{
+    var notes = (string)ViewBag.Notes;
+    var links = (IEnumerable<JToken>)ViewBag.Links;
+}
+
+<div class="panel panel-info pull-right">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <span class="fa fa-info-circle"></span> Additional information
+        </div>
+    </div>
+    <div class="panel-body">
+        @if (!String.IsNullOrWhiteSpace(notes))
+        {
+            <fieldset>
+                <legend><small>Remarks</small></legend>
+                <p>@notes</p>
+            </fieldset>
+        }
+
+        @if (links.Any())
+        {
+            <fieldset>
+                <legend><small>See also</small></legend>
+                <ul>
+                    @foreach (var link in links)
+                    {
+                        <li><a href="@((string)link["url"])" target="_blank">@((string)link["title"])</a></li>
+                    }
+                </ul>
+            </fieldset>
+        }
+    </div>
+</div>
