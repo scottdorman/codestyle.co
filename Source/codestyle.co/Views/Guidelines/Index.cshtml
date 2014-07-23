@@ -1,0 +1,62 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@using MarkdownSharp;
+
+@model JObject
+@{
+    var sections = Model["sections"].Where(s => (bool)s["shown"] == true);
+    var sourceUrl = (Model["sourceUrl"] != null ? (string)Model["sourceUrl"] : String.Empty);
+}
+
+<div class="sectionwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="page-header">
+                    <h1><span class="@Model["icon"]"></span> @Model["title"]</h1>
+                </div>
+                <h4>@Model["description"]</h4>
+                @if (!String.IsNullOrWhiteSpace(sourceUrl))
+                {
+                    <div class="label"><a href="@sourceUrl">Adapted from original guidelines at @sourceUrl</a></div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (sections.Any())
+{
+    <h1 class="section-header">
+        <span class="container center-block">Table of Contents</span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    @foreach (var section in sections)
+                    {
+                        var title = (string)section["title"];
+                        var id = Helpers.CreateSanitizedId(title);
+                        <li><a href="#@id">@title</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    foreach (var section in sections)
+    {
+        var title = (string)section["title"];
+        var id = Helpers.CreateSanitizedId(title);
+
+        <h1 class="section-header" id="@id">
+            <span class="container center-block">
+                @title
+            </span>
+        </h1>
+        <div class="container">
+            @Html.DisplayFor(m => section, "Guideline")
+        </div>
+    }
+}
