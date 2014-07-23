@@ -1,0 +1,11 @@
+﻿{
+    "title": "General",
+    "icon": "fa fa-file-text-o",
+    "sections": [
+        {
+            "title": "Comments",
+            "shown": true,
+            "markdown": "comments.md"
+        }
+    ]
+}
