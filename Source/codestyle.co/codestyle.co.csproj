@@ -141,7 +141,12 @@
     <Content Include="Content\pictonic.min.css">
       <DependentUpon>pictonic.css</DependentUpon>
     </Content>
-    <Content Include="Content\style.css" />
+    <Content Include="Content\style.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="Content\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -165,6 +170,10 @@
     <Content Include="fonts\pictonic.svgz" />
     <Content Include="fonts\pictonic.ttf" />
     <Content Include="fonts\pictonic.woff" />
+    <Content Include="Content\style.less" />
+    <Content Include="Content\style.css.map">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\codestyle - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle.pubxml" />
@@ -263,6 +272,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /i /e /y "C:\Users\Scott\Source\Repos\codestyle.co\data" $(ProjectDir)data</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
