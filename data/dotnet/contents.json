@@ -1,6 +1,6 @@
 {
     "title": ".NET",
-    "icon": "prog-dotnet",
+    "icon": "icon-prog-dotnet",
     "sections": [
         {
             "title": "Naming conventions",
