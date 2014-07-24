@@ -165,36 +165,6 @@
     <Content Include="fonts\pictonic.svgz" />
     <Content Include="fonts\pictonic.ttf" />
     <Content Include="fonts\pictonic.woff" />
-    <Content Include="data\html\attribute-order.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="data\html\boolean-attributes.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="data\html\syntax.md" />
-    <Content Include="data\html\doctype.md" />
-    <Content Include="data\html\lang.md" />
-    <Content Include="data\html\ie-compatability.md" />
-    <Content Include="data\html\character-encoding.md" />
-    <Content Include="data\html\includes.md" />
-    <Content Include="data\html\practicality.md" />
-    <Content Include="data\html\reducing-markup.md" />
-    <Content Include="data\html\generated-markup.md" />
-    <Content Include="data\html\contents.json" />
-    <Content Include="data\css\contents.json" />
-    <Content Include="data\css\syntax.md" />
-    <Content Include="data\css\declaration-order.md" />
-    <Content Include="data\css\import.md" />
-    <Content Include="data\css\media-queries.md" />
-    <Content Include="data\css\prefixed-properties.md" />
-    <Content Include="data\css\single-declaration.md" />
-    <Content Include="data\css\shorthand.md" />
-    <Content Include="data\css\nesting.md" />
-    <Content Include="data\css\classes.md" />
-    <Content Include="data\css\selectors.md" />
-    <Content Include="data\css\organization.md" />
-    <Content Include="data\general\comments.md" />
-    <Content Include="data\general\contents.json" />
     <None Include="Properties\PublishProfiles\codestyle - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle.pubxml" />
