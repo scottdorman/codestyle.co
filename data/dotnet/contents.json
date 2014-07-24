@@ -1,0 +1,11 @@
+{
+    "title": ".NET",
+    "icon": "prog-dotnet",
+    "sections": [
+        {
+            "title": "Naming conventions",
+            "shown": true,
+            "markdown": "naming.md"
+        }
+    ]
+}

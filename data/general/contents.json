@@ -21,6 +21,11 @@
             "title": "Comments",
             "shown": true,
             "markdown": "comments.md"
+        },
+        {
+            "title": "Naming conventions",
+            "shown": true,
+            "markdown": "naming.md"
         }
     ]
 }
