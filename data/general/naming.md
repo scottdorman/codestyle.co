@@ -10,3 +10,7 @@
 
 - Don't use abbreviations or contractions as part of identifier names.
 - Don't use acronyms that aren't widely accepted, and even if they are, only when necessary.
+
+## Case Sensitivity
+
+- Don't assume that all programming languages are case sensitive. Names should not differ by case alone.
