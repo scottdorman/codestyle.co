@@ -209,6 +209,40 @@ namespace codestyle.co
 
             return new MvcHtmlString(String.Join(" ", content, infoPanel == null ? String.Empty : infoPanel.ToString()));
         }
+
+        public static MvcHtmlString BuildLink(JToken Model, string target = "_blank", string css = null, bool useTitleForTooltip = false)
+        {
+            if (Model != null)
+            {
+                var url = (string)Model["url"];
+                var title = Model["title"] != null ? (string)Model["title"] : String.Empty;
+                var hasTitle = !String.IsNullOrWhiteSpace(title);
+
+                var linkBuilder = new TagBuilder("a");
+                if (!String.IsNullOrWhiteSpace(css))
+                {
+                    linkBuilder.AddCssClass(css);
+                }
+
+                if (!String.IsNullOrWhiteSpace(target))
+                {
+                    linkBuilder.MergeAttribute("target", target, replaceExisting: true);
+                }
+
+                linkBuilder.MergeAttribute("href", url, replaceExisting: true);
+
+                if (hasTitle && useTitleForTooltip)
+                {
+                    linkBuilder.MergeAttribute("title", title, replaceExisting: true);
+                }
+
+                linkBuilder.SetInnerText(hasTitle ? title : url);
+
+                return new MvcHtmlString(linkBuilder.ToString());
+            }
+
+            return MvcHtmlString.Empty;
+        }
     }
 
     // Valid IDs are defined in
