@@ -140,11 +140,11 @@ ol {
   font-weight: 400;
   color: #fff;
 }
-.sectionwrap .label a {
+.sectionwrap a {
   color: #1abc9c;
 }
-.sectionwrap .label a:hover,
-.sectionwrap .label a:focus {
+.sectionwrap a:hover,
+.sectionwrap a:focus {
   color: #1abc9c;
   background-color: transparent;
   border-bottom: 2px solid #1abc9c;

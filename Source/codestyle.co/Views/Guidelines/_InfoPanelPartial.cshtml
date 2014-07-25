@@ -28,7 +28,9 @@
                 <ul>
                     @foreach (var link in links)
                     {
-                        <li><a href="@((string)link["url"])" target="_blank">@((string)link["title"])</a></li>
+                        <li>
+                            @Helpers.BuildLink(link)
+                        </li>
                     }
                 </ul>
             </fieldset>

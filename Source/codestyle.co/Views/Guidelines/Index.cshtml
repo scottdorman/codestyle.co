@@ -5,7 +5,6 @@
 @model JObject
 @{
     var sections = Model["sections"].Where(s => (bool)s["shown"] == true);
-    var sourceUrl = (Model["sourceUrl"] != null ? (string)Model["sourceUrl"] : String.Empty);
 }
 
 <div class="sectionwrap">
@@ -16,10 +15,7 @@
                     <h1><span class="@Model["icon"]"></span> @Model["title"]</h1>
                 </div>
                 <h4>@Model["description"]</h4>
-                @if (!String.IsNullOrWhiteSpace(sourceUrl))
-                {
-                    <div class="label"><a href="@sourceUrl">Adapted from original guidelines at @sourceUrl</a></div>
-                }
+                @Helpers.BuildLink(Model["attribution"])
             </div>
         </div>
     </div>
