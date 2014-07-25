@@ -108,7 +108,7 @@ In general, PascalCasing should be used for all identifiers exept parameter name
 ## Naming New Versions of Existing APIs
 
 - To help highlight the relationship between the APIs, use a name that is similar to the old API when creating a new version. You should consider using a brand new, but meaningful, name instead of adding a suffix or a prefix. If there isn't a meaningful new name that can be used, adding a suffix is better than adding a prefix to make the new API more discoverable. Since Intellisense and most documentation show identifiers in alphabetical order, this will show the new API near the old one. Add a numeric suffix only if a meaningful suffix (or changing the name) isn't appropriate, such as when the name is an industry standard name). However, don't use an "Ex" (or a similar) suffix to distinguish it from an existing API.
-- Use the "64" suffix when introducing versions of APIs that operate on a 64-bit integer (a long integer) instead of a 32-bit integer. You only need to take this approach when the existing 32-bit API exists; don’t do it for brand new APIs with only a 64-bit version.
+- Use the "64" suffix when introducing versions of APIs that operate on a 64-bit integer (a long integer) instead of a 32-bit integer. You only need to take this approach when the existing 32-bit API exists; don't do it for brand new APIs with only a 64-bit version.
 
 ## Namespaces
 
