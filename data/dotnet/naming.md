@@ -1,147 +1,102 @@
 ## Capitalization
 
-- All public member, type and namespace names that are made up of multiple words should Use PascalCasing.
-- Parameter names should always use camelCasing.
-<dl class="dl-horizontal">
-   <dt>Namespace</dt>
-   <dd>PascalCasing</dd>
-   <dt>Type</dt>
-   <dd>PascalCasing</dd>
-   <dt>Interface</dt>
-   <dd>PascalCasing</dd>
-   <dt>Method</dt>
-   <dd>PascalCasing</dd>
-   <dt>Property</dt>
-   <dd>PascalCasing</dd>
-   <dt>Event</dt>
-   <dd>PascalCasing</dd>
-   <dt>Field</dt>
-   <dd>PascalCasing</dd>
-   <dt>Enum value</dt>
-   <dd>PascalCasing</dd>
-   <dt>Parameter</dt>
-   <dd>camelCasing</dd>
-</dl>
+There are two ways to capitalize identifiers:
 
-<table class="table">
-                <tr>
-                  <td>
-                    <p>Namespace</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">namespace System.Security&nbsp;{ ... }</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Type</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class StreamReader { ... }</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Interface</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public interface IEnumerable { ... }</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Method</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class Object {</span>
-                      <br> <span class="code">   public virtual string ToString();</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Property</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class String {</span>
-                      <br> <span class="code">   public int Length { get; }</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Event</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class Process {</span>
-                      <br> <span class="code">   public event EventHandler Exited;</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Field</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class MessageQueue {</span>
-                      <br> <span class="code">   public static readonly TimeSpan</span><br> <span class="code">InfiniteTimeout;</span><br> <span class="code">}</span><br> <span class="code">public struct UInt32 {</span><br> <span class="code">   public const Min = 0;</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Enum value</p>
-                  </td>
-                  <td>
-                    <p>Pascal</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public enum FileMode {</span>
-                      <br> <span class="code">   Append,</span><br> <span class="code">   ...</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Parameter</p>
-                  </td>
-                  <td>
-                    <p>Camel</p>
-                  </td>
-                  <td>
-                    <p>
-                      <span class="code">public class Convert {</span>
-                      <br> <span class="code">   public static int ToInt32(string value);</span><br> <span class="code">}</span></p>
-                  </td>
-                </tr>
-              </tbody></table>
+- **PascalCasing** capitalizes the first character of each word, including acronyms. A special case is made for two-letter acronyms, in which both letters are capitalized.
+- **camelCasing** capitalizes the first character of each word except the first word. Two-letter acronyms that begin a camel-cased identifier are both lowercase.
+
+In general, PascalCasing should be used for all identifiers exept parameter names, which should use camelCasing. The following table shows the capitalization rules for different types of identifiers.
+
+<table class="table table-condensed">
+	<thead>
+		<tr>
+			<th>Identifier</th>
+			<th>Casing</th>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+	      <td>
+	        Namespace
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Type
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Interface
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Method
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Property
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Event
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Field
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Enum
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Enum value
+	      </td>
+	      <td>
+	        Pascal
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        Parameter
+	      </td>
+	      <td>
+	        Camel
+	      </td>
+	    </tr>
+	  </tbody>
+</table>
 
 - When a compound word is written as a single word (known as closed form), such as endpoint, don't capitalize each word. Instead, you should treat them as a single word. You can use a current dictionary to help decide if a compound word is written in closed form.
 
