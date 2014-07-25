@@ -1,7 +1,10 @@
-﻿{
+{
     "title": "CSS",
     "icon": "icon-css3-01",
-    "sourceUrl":  "http://codeguide.co/#css",
+    "attribution": {
+    	"url": "http://codeguide.co/#css",
+    	"title": "Adapted from codeguide.co"
+    },
     "sections": [
         {
             "title": "Syntax",

@@ -1,7 +1,10 @@
-﻿{
+{
     "title": "HTML",
     "icon": "icon-html5-01",
-    "sourceUrl":  "http://codeguide.co/#html",
+    "attribution": {
+    	"url": "http://codeguide.co/#html",
+    	"title": "Adapted from codeguide.co"
+    },
     "sections": [
         {
             "title": "Syntax",
