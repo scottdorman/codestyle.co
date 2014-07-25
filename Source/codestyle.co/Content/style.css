@@ -1,26 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- * Date: 04-20-2014
- * URL: 
- */
-/* ==========================================================================
-   Base Styles, Bootstrap Modifications & Fonts Import
-   ========================================================================== */
-::-moz-selection {
-  background: #16a085;
-  color: #a4003a;
-  text-shadow: none;
-}
-::selection {
-  background: #16a085;
-  color: #a4003a;
-  text-shadow: none;
-}
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 hr {
   display: block;
   height: 1px;
@@ -38,9 +16,6 @@ hr {
 .mb {
   margin-bottom: 80px;
 }
-/* ==========================================================================
-   General styles
-   ========================================================================== */
 html {
   position: relative;
   min-height: 100%;
@@ -63,8 +38,8 @@ h6 {
   color: #4a4a4a;
 }
 .navbar-default {
-  background-color: #1b6296;
-  border-color: #1b6296;
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
 }
 .navbar-default .navbar-brand {
   font-weight: 700;
@@ -99,16 +74,13 @@ ul,
 ol {
   list-style: square;
 }
-/* ==========================================================================
-   Wrap Sections
-   ========================================================================== */
 .section-background-grey {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f2f2f2;
 }
 .sectionwrap {
-  background-color: #1b6296;
+  background-color: #2f2f2f;
   margin-top: -70px;
   padding-top: 200px;
   min-height: 475px;

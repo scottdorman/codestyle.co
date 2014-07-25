@@ -178,6 +178,7 @@
     <None Include="Properties\PublishProfiles\codestyle - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="img\codestyle.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\gist-embed.js" />
