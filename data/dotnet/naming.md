@@ -2,19 +2,28 @@
 
 - All public member, type and namespace names that are made up of multiple words should Use PascalCasing.
 - Parameter names should always use camelCasing.
+<dl class="dl-horizontal">
+   <dt>Namespace</dt>
+   <dd>PascalCasing</dd>
+   <dt>Type</dt>
+   <dd>PascalCasing</dd>
+   <dt>Interface</dt>
+   <dd>PascalCasing</dd>
+   <dt>Method</dt>
+   <dd>PascalCasing</dd>
+   <dt>Property</dt>
+   <dd>PascalCasing</dd>
+   <dt>Event</dt>
+   <dd>PascalCasing</dd>
+   <dt>Field</dt>
+   <dd>PascalCasing</dd>
+   <dt>Enum value</dt>
+   <dd>PascalCasing</dd>
+   <dt>Parameter</dt>
+   <dd>camelCasing</dd>
+</dl>
 
 <table class="table">
-                <tbody><tr>
-                  <th>
-                    <p>Identifier</p>
-                  </th>
-                  <th>
-                    <p>Casing</p>
-                  </th>
-                  <th>
-                    <p>Example</p>
-                  </th>
-                </tr>
                 <tr>
                   <td>
                     <p>Namespace</p>
@@ -148,7 +157,7 @@
 
 ## Namespaces
 
-- Namespaces should follow the general pattern of `<Company>`.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]`. They should always start with a company name to help prevent name collisions. The second level of the namespace should be a stable version-independent product or technology name. The remaining two levels are optional.
+- Namespaces should follow the general pattern of `<Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]`. They should always start with a company name to help prevent name collisions. The second level of the namespace should be a stable version-independent product or technology name. The remaining two levels are optional.
 - Namespaces should be organized around groups of related technology and not company organizational hierarchies.
 - Don't use the same name for a namespace and a type in that namespace. Doing so creates problems both for the compiler and the developer and requires that the type always be fully qualified.
 
@@ -164,15 +173,16 @@
 ## Common Names for Derived Types
 
 - When deriving from certain .NET Framework types or implementing certain .NET Framework interfaces, follow these guidelines:
--- `System.Attribute` - Add the suffix "Attribute."
--- `System.Delegate` - Add the suffix "EventHandler" to names of delegates that are used in events and the suffix "Callback" to any other delegates. Don't add the suffix "Delegate."
--- `System.EventArgs` - Add the suffix "EventArgs."
--- `System.Enum` - Don't derive directly from this class; instead use the language keyword. Don't add an "Enum" or "Flag" suffix.
--- `System.Exception` - Add the suffix "Exception."
--- `IDictionary`, `IDictionary<TKey, TValue>` - Add the suffix "Dictionary."
--- `IEnumerable`, `ICollection`, `IList`, `IEnumerable<T>`, `ICollection<T>`, `IList<T>` - Add the suffix "Collection."
--- `System.IO.Stream` - Add the suffix "Stream."
--- `CodeAccessPermission`, `IPermission` - Add the suffix "Permission."
+
+    - `System.Attribute` - Add the suffix "Attribute."
+    - `System.Delegate` - Add the suffix "EventHandler" to names of delegates that are used in events and the suffix "Callback" to any other delegates. Don't add the suffix "Delegate."
+    - `System.EventArgs` - Add the suffix "EventArgs."
+    - `System.Enum` - Don't derive directly from this class; instead use the language keyword. Don't add an "Enum" or "Flag" suffix.
+    - `System.Exception` - Add the suffix "Exception."
+    - `IDictionary`, `IDictionary<TKey, TValue>` - Add the suffix "Dictionary."
+    - `IEnumerable`, `ICollection`, `IList`, `IEnumerable<T>`, `ICollection<T>`, `IList<T>` - Add the suffix "Collection."
+    - `System.IO.Stream` - Add the suffix "Stream."
+    - `CodeAccessPermission`, `IPermission` - Add the suffix "Permission."
 
 ## Method, Property and Field Names
 
@@ -180,7 +190,7 @@
 - Properties which represent collections should be a plural phrase describing the items in the collection.
 - Properties which represent Boolean data should use an affirmative phrase. You can also prefix these properties with "Is", "Can", or "Has" if doing so adds value.
 - Properties shouldn't match the name of "Get" methods.
-- Fields should not use a prefix, like "g_", "s_", or "_".
+- Fields should not use a prefix, like "g\_", "s\_", or "\_".
 
 ## Event Names
 
@@ -191,15 +201,17 @@
 
 - Parameter names should always be descriptive and whenever possible be based on the parameter's meaning instead of it's type.
 - For operator overload parameters, follow these additional guidelines:
--- Use `left` and `right` for binary operator overload parameters and `value` for unary operator overload parameters unless more meaningful names would add significant value.
--- Don't use abbreviations or numeric indices.
+
+    - Use `left` and `right` for binary operator overload parameters and `value` for unary operator overload parameters unless more meaningful names would add significant value.
+    - Don't use abbreviations or numeric indices.
 
 ## Resource Names
 
 Localized resources can be referenced as if they were properties, so their naming should be similar to those of actual properties. These additional guidelines should also be followed:
+
 - Use descriptive rather than short identifiers and use only alphanumeric characters and underscores.
 - Exception message resources should be prefixed with the exception type name.
 
 ## Assembly and DLL names
 
-Using a name that represents the large chunks of functionality, such as System.Data, helps in discoverability.
+Using a name that represents the large chunks of functionality, such as `System.Data`, helps in discoverability.
