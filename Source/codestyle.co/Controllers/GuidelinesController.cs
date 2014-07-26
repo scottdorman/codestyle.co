@@ -17,7 +17,7 @@ namespace codestyle.co.Controllers
             var model = ControllerUtilities.GetContents(id);
             if (model != null)
             {
-                ViewBag.Title = "Guidelines for " + (string)model["title"];
+                ViewBag.Title = String.Format("{0} Guidelines", (string)model["title"]);
                 return View(model);
             }
 

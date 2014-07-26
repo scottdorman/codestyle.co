@@ -11,7 +11,6 @@ namespace codestyle.co.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home";
             var model = ControllerUtilities.GetTableOfContents();
             return View(model);
         }
