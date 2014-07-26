@@ -141,6 +141,9 @@
     <Content Include="Content\pictonic.min.css">
       <DependentUpon>pictonic.css</DependentUpon>
     </Content>
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <Content Include="Content\style.css">
       <DependentUpon>style.less</DependentUpon>
     </Content>
@@ -177,12 +180,18 @@
     <None Include="Properties\PublishProfiles\codestyle - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\codestyle.pubxml" />
+    <Content Include="Scripts\gist-embed.min.js.map">
+      <DependentUpon>gist-embed.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="img\codestyle-full.png" />
     <Content Include="img\codestyle.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\gist-embed.js" />
+    <Content Include="Scripts\gist-embed.min.js">
+      <DependentUpon>gist-embed.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
