@@ -105,6 +105,16 @@ namespace codestyle.co
             return sb.ToString();
         }
 
+        public static string GeneratePageTitle(string title)
+        {
+            if (!String.IsNullOrWhiteSpace(title))
+            {
+                return String.Format("{0} - Codestyle.co", title);
+            }
+
+            return "Codestyle.co";
+        }
+
         public static MvcHtmlString DisplayMarkdown(JToken section, string id)
         {
             var content = String.Empty;
