@@ -246,7 +246,12 @@ namespace codestyle.co
                     linkBuilder.MergeAttribute("title", title, replaceExisting: true);
                 }
 
-                linkBuilder.SetInnerText(hasTitle ? title : url);
+                var externalIconBuilder = new TagBuilder("sup");
+                var externalIconSpanBuilder = new TagBuilder("span");
+                externalIconSpanBuilder.AddCssClass("fa fa-external-link");
+                externalIconBuilder.InnerHtml = externalIconSpanBuilder.ToString();
+
+                linkBuilder.InnerHtml = String.Format("{0} {1}", hasTitle ? title : url, externalIconBuilder.ToString());
 
                 return new MvcHtmlString(linkBuilder.ToString());
             }
