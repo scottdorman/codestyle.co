@@ -44,7 +44,7 @@
             "title": "IE compatibility mode",
             "shown": true,
             "markdown": "ie-compatibility.md",
-            "gistFile": "html-ie-compatability.html",
+            "gistFile": "html-ie-compatibility.html",
             "links": [
                 {
                     "url": "http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e",
