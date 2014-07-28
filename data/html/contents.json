@@ -41,9 +41,9 @@
             ]
         },
         {
-            "title": "IE compatability mode",
+            "title": "IE compatibility mode",
             "shown": true,
-            "markdown": "ie-compatability.md",
+            "markdown": "ie-compatibility.md",
             "gistFile": "html-ie-compatability.html",
             "links": [
                 {
