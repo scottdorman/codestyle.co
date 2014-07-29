@@ -238,6 +238,7 @@
     <Content Include="Views\Guidelines\_InfoPanelPartial.cshtml" />
     <Content Include="Views\Guidelines\DisplayTemplates\Guideline.cshtml" />
     <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
+    <Content Include="Views\Shared\_AppInsights.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
