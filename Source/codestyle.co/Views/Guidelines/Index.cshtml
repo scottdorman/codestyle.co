@@ -1,10 +1,14 @@
 ﻿@using Newtonsoft.Json;
 @using Newtonsoft.Json.Linq;
-@using MarkdownSharp;
 
 @model JObject
 @{
     var sections = Model["sections"].Where(s => (bool)s["shown"] == true);
+}
+
+@section styles {
+    @*@Styles.Render("~/Content/css/highlight")*@
+    <link rel="stylesheet" href="~/Content/highlight-styles/github.css">
 }
 
 <div class="sectionwrap">
@@ -55,4 +59,12 @@
             @Html.DisplayFor(m => section, "Guideline")
         </div>
     }
+}
+
+@section scripts {
+@Scripts.Render("~/bundles/highlight")
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 }

@@ -4,9 +4,6 @@
 @model JObject
 
 @{
-    //var gistId = Model["gist"] != null ? (string)Model["gist"] : String.Empty;
-    var gistId = "scottdorman/6b4564565a9a110fdb7f";
-    var gistFile = Model["gistFile"] != null ? (string)Model["gistFile"] : String.Empty;
     var language = (string)ViewBag.Language;
     var notes = (string)Model["notes"];
     var links = (Model["links"] != null ? Model["links"] : Enumerable.Empty<JToken>());
@@ -16,39 +13,16 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="row">
-            @if (shouldDisplayInfoPanel)
-            {
-                <div class="col-lg-8">
-                    @Helpers.DisplayMarkdown(Model, @language)
-                </div>
-                <div class="col-lg-4">
+            <div class="col-lg-12">
+                @Helpers.DisplayMarkdown(Model, @language)
+                @if (shouldDisplayInfoPanel)
+                {
                     @Html.Partial("_InfoPanelPartial", new ViewDataDictionary {
-                       { "Notes", notes },
-                       { "Links", links }
+                        { "Notes", notes },
+                        { "Links", links }
                     })
-                </div>
-            }
-            else
-            {
-                <div class="col-lg-12">
-                    @Helpers.DisplayMarkdown(Model, @language)
-                </div>
-            }
-        </div>
-        @if (!String.IsNullOrWhiteSpace(gistFile))
-        {
-            <div class="row">
-                <div class="col-lg-12">
-                    <fieldset>
-                        <legend>
-                            <small>
-                                Example
-                            </small>
-                        </legend>
-                        <div data-gist-id="@gistId" data-gist-file="@gistFile" data-gist-hide-footer="true"></div>
-                    </fieldset>
-                </div>
+                }
             </div>
-        }
+        </div>
     </div>
 </div>

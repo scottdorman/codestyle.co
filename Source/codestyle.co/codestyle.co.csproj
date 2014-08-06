@@ -49,8 +49,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="MarkdownSharp">
-      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    <Reference Include="MarkdownDeep, Version=1.5.5331.15795, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MarkdownDeep.NET.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -135,6 +136,58 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\highlight-styles\arta.css" />
+    <Content Include="Content\highlight-styles\ascetic.css" />
+    <Content Include="Content\highlight-styles\atelier-dune.dark.css" />
+    <Content Include="Content\highlight-styles\atelier-dune.light.css" />
+    <Content Include="Content\highlight-styles\atelier-forest.dark.css" />
+    <Content Include="Content\highlight-styles\atelier-forest.light.css" />
+    <Content Include="Content\highlight-styles\atelier-heath.dark.css" />
+    <Content Include="Content\highlight-styles\atelier-heath.light.css" />
+    <Content Include="Content\highlight-styles\atelier-lakeside.dark.css" />
+    <Content Include="Content\highlight-styles\atelier-lakeside.light.css" />
+    <Content Include="Content\highlight-styles\atelier-seaside.dark.css" />
+    <Content Include="Content\highlight-styles\atelier-seaside.light.css" />
+    <Content Include="Content\highlight-styles\brown_paper.css" />
+    <Content Include="Content\highlight-styles\brown_papersq.png" />
+    <Content Include="Content\highlight-styles\codepen-embed.css" />
+    <Content Include="Content\highlight-styles\color-brewer.css" />
+    <Content Include="Content\highlight-styles\dark.css" />
+    <Content Include="Content\highlight-styles\default.css" />
+    <Content Include="Content\highlight-styles\docco.css" />
+    <Content Include="Content\highlight-styles\far.css" />
+    <Content Include="Content\highlight-styles\foundation.css" />
+    <Content Include="Content\highlight-styles\github.css" />
+    <Content Include="Content\highlight-styles\googlecode.css" />
+    <Content Include="Content\highlight-styles\hybrid.css" />
+    <Content Include="Content\highlight-styles\idea.css" />
+    <Content Include="Content\highlight-styles\ir_black.css" />
+    <Content Include="Content\highlight-styles\kimbie.dark.css" />
+    <Content Include="Content\highlight-styles\kimbie.light.css" />
+    <Content Include="Content\highlight-styles\magula.css" />
+    <Content Include="Content\highlight-styles\mono-blue.css" />
+    <Content Include="Content\highlight-styles\monokai.css" />
+    <Content Include="Content\highlight-styles\monokai_sublime.css" />
+    <Content Include="Content\highlight-styles\obsidian.css" />
+    <Content Include="Content\highlight-styles\paraiso.dark.css" />
+    <Content Include="Content\highlight-styles\paraiso.light.css" />
+    <Content Include="Content\highlight-styles\pojoaque.css" />
+    <Content Include="Content\highlight-styles\pojoaque.jpg" />
+    <Content Include="Content\highlight-styles\railscasts.css" />
+    <Content Include="Content\highlight-styles\rainbow.css" />
+    <Content Include="Content\highlight-styles\school_book.css" />
+    <Content Include="Content\highlight-styles\school_book.png" />
+    <Content Include="Content\highlight-styles\solarized_dark.css" />
+    <Content Include="Content\highlight-styles\solarized_light.css" />
+    <Content Include="Content\highlight-styles\sunburst.css" />
+    <Content Include="Content\highlight-styles\tomorrow-night-blue.css" />
+    <Content Include="Content\highlight-styles\tomorrow-night-bright.css" />
+    <Content Include="Content\highlight-styles\tomorrow-night-eighties.css" />
+    <Content Include="Content\highlight-styles\tomorrow-night.css" />
+    <Content Include="Content\highlight-styles\tomorrow.css" />
+    <Content Include="Content\highlight-styles\vs.css" />
+    <Content Include="Content\highlight-styles\xcode.css" />
+    <Content Include="Content\highlight-styles\zenburn.css" />
     <Content Include="Content\pictonic.css">
       <DependentUpon>pictonic.less</DependentUpon>
     </Content>
@@ -192,6 +245,7 @@
     <Content Include="Scripts\gist-embed.min.js">
       <DependentUpon>gist-embed.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\highlight.pack.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
@@ -225,7 +279,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
