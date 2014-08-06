@@ -1,0 +1,165 @@
+{
+    "title": "AngularJS",
+    "icon": "icon-angularjs",
+    "attribution": {
+      "url": "https://github.com/johnpapa/angularjs-styleguide",
+      "title": "Adapted from John Papa's Angular Style Guide"
+    },
+    "sections": [
+        {
+            "title": "Single Responsibility",
+            "shown": true,
+            "markdown": "single-responsibility.md"
+        },
+        {
+            "title": "Immediately Invoked Function Expressions (IIFE)",
+            "shown": true,
+            "markdown": "iife.md",
+            "notes": "For brevity only, the rest of the examples in this guide may omit the IIFE syntax."
+        },
+        {
+            "title": "Modules",
+            "shown": true,
+            "markdown": "modules.md"
+        },
+        {
+            "title": "Controllers",
+            "shown": true,
+            "markdown": "controllers.md",
+            "links": [
+            {
+               "url": "http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/",
+               "title": "Do you like your Angular controllers with or without sugar?"
+            },
+            {
+               "url": "https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$emit"
+            },
+            {
+               "url": "https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$broadcast"
+            },
+            {
+               "url": "https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$on"
+            },
+            {
+               "url": "https://docs.angularjs.org/api/ng/directive/ngController"
+            }
+            ]
+        },
+        {
+            "title": "Services",
+            "shown": true,
+            "markdown": "services.md",
+        },
+        {
+            "title": "Factories",
+            "shown": true,
+            "markdown": "factories.md",
+            "links": [
+               {
+                  "url": "http://en.wikipedia.org/wiki/Single_responsibility_principle"
+               },
+               {
+                  "url": "http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript",
+                  "title": "Revealing Module Pattern"
+               }
+            ]
+        },
+        {
+            "title": "Directives",
+            "shown": true,
+            "markdown": "directives.md",
+            "links": [
+               {
+                  "url": "https://docs.angularjs.org/api/ngAnimate"
+               },
+               {
+                  "url": "https://docs.angularjs.org/api/ng/directive/ngShow"
+               },
+               {
+                  "url": "https://docs.angularjs.org/api/ng/directive/ngHide"
+               }
+            ]
+        },
+        {
+            "title": "Resolving Promises for a Controller",
+            "shown": true,
+            "markdown": "resolving-promises-for-a-controller.md",
+            "links": [
+               {
+                  "url": "https://docs.angularjs.org/api/ngRoute/provider/$routeProvider"
+               }
+            ]
+        },
+        {
+            "title": "Manual Dependency Injection",
+            "shown": true,
+            "markdown": "manual-dependency-injection.md",
+            "links": [
+               {
+                  "url": "https://github.com/olov/ng-annotate"
+               }
+            ]
+        },
+        {
+            "title": "Minification and Annotation",
+            "shown": true,
+            "markdown": "minification-and-annotation.md",
+            "links": [
+               {
+                  "url": "https://github.com/olov/ng-annotate"
+               },
+               {
+                  "url": "http://gulpjs.com"
+               },
+               {
+                  "url": "http://gruntjs.com"
+               },
+               {
+                  "url": "https://docs.angularjs.org/api/ng/directive/ngApp"
+               },
+               {
+                  "url": "https://www.npmjs.org/package/gulp-ng-annotate"
+               },
+               {
+                  "url": "https://www.npmjs.org/package/grunt-ng-annotate"
+               }
+            ]
+        },
+        {
+            "title": "Exception Handling",
+            "shown": true,
+            "markdown": "exception-handling.md"
+        },
+        {
+            "title": "Application Structure",
+            "shown": true,
+            "markdown": "application-structure.md"
+        },
+        {
+            "title": "Angular $ Wrapper Services",
+            "shown": true,
+            "markdown": "angular-$-wrapper-services.md"
+        },
+        {
+            "title": "Comments",
+            "shown": true,
+            "markdown": "comments.md"
+        },
+        {
+            "title": "JSHint",
+            "shown": true,
+            "markdown": "js-hint.md",
+            "links": [
+               {
+                  "url": "http://www.jshint.com/docs/",
+                  "title": "JS Hint docsumentation"
+               }
+            ]
+        },
+        {
+            "title": "Constants",
+            "shown": true,
+            "markdown": "constants.md"
+        }
+    ]
+}
