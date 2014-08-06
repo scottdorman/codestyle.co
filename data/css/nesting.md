@@ -2,12 +2,12 @@ Avoid unnecessary nesting. Just because you can nest, doesn't mean you always sh
 
 ```css
 // Without nesting
-.table > thead > tr > th { … }
-.table > thead > tr > td { … }
+.table > thead > tr > th { &hellip; }
+.table > thead > tr > td { &hellip; }
  
 // With nesting
 .table > thead > tr {
-  > th { … }
-  > td { … }
+  > th { &hellip; }
+  > td { &hellip; }
 }
 ```
