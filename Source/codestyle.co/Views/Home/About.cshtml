@@ -42,27 +42,28 @@
     <div class="row">
         <div class="col-lg-12">
             <p>
-                All of the standards shown are maintained in the
-                <a href="https://github.com/scottdorman/codestyle.co" target="_blank">codestyle.co GitHub repository</a>.
-                Each language is in it's own folder under the data folder and contains a
-                <code>contents.json</code> file which serves as the table of contents. This allows me
-                to easily turn guidelines on or off, control the order, and maintain reference links without
-                having to edit the actual guideline content itself. The guideline content is stored as individual
-                markdown files.
-            </p>
-            <p>
-                Similarly, all of the code examples that go along with the guidelines are maintained as a
-                <a href="https://gist.github.com/scottdorman/6b4564565a9a110fdb7f" target="_blank">GitHub gist</a>.
-                If you want to update an example for an existing guideline, add a new example (for a
-                guideline that didn't previously have one), or you need to add new examples because you're
-                adding guidelines for a new language, all you need to do is fork the gist repository and
-                submit a pull request.
-            </p>
-            <p>
-                If you want to add a new programming language, add a new guideline to an existing language, or want to update
-                an existing guideline all you need to do is fork the repository and submit
-                a pull request. If you aren't comfortable forking repositories and submitting pull requests,
+                If you have questions about any of the guidelines, please
+                <a href="https://github.com/scottdorman/codestyle.co/issues/new" target="_blank">open an issue</a>.
+                If you find any errors, want to update an existing guideline, add a new guideline to an existing
+                language, or even want to add a new language all you need to do is fork the repository and submit
+                a pull request.
+                If you aren't comfortable forking repositories and submitting pull requests,
                 simply <a href="https://github.com/scottdorman/codestyle.co/issues/new" target="_blank">open an issue</a>.
+            </p>
+            <p>
+                All of the standards are maintained in a
+                <a href="https://github.com/scottdorman/codestyle.co" target="_blank">GitHub repository</a>.
+                This was done to help keep the content up to date by allowing community contributions and
+                open discussions.
+            </p>
+            <p>
+                Each language is in it's own folder under the <code>data</code> folder and contains a
+                <code>contents.json</code> file as well as the markdown files for each individual guideline.
+                The <code>contents.json</code> file acts as a table of contents and allows me
+                to easily turn guidelines on or off, control the order, and maintain reference links without
+                having to edit the actual guideline content itself. The markdown files are completely
+                self-contained guidelines and include both the text of the guideline plus all code
+                examples.
             </p>
         </div>
     </div>
@@ -110,16 +111,20 @@
                     <a href="https://pictonic.co/free" target="_blank">Pictonic</a>.
                 </li>
                 <li>
-                    The GitHub embedded gists are done with
-                    <a href="https://github.com/blairvanderhoof/gist-embed" target="_blank">gist-embed</a>
-                    by Blair Vanderhoof.
+                    The markdown processing and rendering is done with a modified version of
+                    <a href="https://github.com/toptensoftware/markdowndeep" target="_blank">MarkdownDeep</a>.
+                </li>
+                <li>
+                    The syntax highlighting for the code examples is done with <a href="http://highlightjs.org/" target="_blank">highlight.js</a>.
+                    If you include a new language and notice that it isn't being highlighted properly, please open an issue.
                 </li>
                 <li>
                     The "go to top" feature is done with <a href="http://www.jquerygoup.tk/" target="_blank">GoUp</a>
                     by Roger Vila.
                 </li>
                 <li>
-                    The smooth scrolling is done using <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" target="_blank">jquery.scrollTo</a> and <a href="http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html" target="_blank">jquery.localScroll</a> by Ariel Flesler.
+                    The smooth scrolling is done using <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" target="_blank">jquery.scrollTo</a>
+                    and <a href="http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html" target="_blank">jquery.localScroll</a> by Ariel Flesler.
                 </li>
                 <li>
                     The continuous integration server for the content files is hosted at

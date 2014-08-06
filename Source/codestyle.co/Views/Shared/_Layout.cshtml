@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="~/favicon.ico">
     <title>@Helpers.GeneratePageTitle(ViewBag.Title)</title>
     @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
     <script type="text/javascript">
         window.google_analytics_uacct = "UA-2662385-2";
     </script>

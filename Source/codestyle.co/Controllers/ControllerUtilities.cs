@@ -1,5 +1,4 @@
-﻿using MarkdownSharp;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -42,12 +41,6 @@ namespace codestyle.co.Controllers
             }
 
             return json;
-        }
-
-        private static void Test()
-        {
-            var m = new Markdown();
-            //m.Transform(
         }
     }
 }

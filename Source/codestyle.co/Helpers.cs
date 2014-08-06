@@ -1,5 +1,5 @@
 ﻿using codestyle.co.Controllers;
-using MarkdownSharp;
+using MarkdownDeep;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,11 @@ namespace codestyle.co
 {
     public static class Helpers
     {
-        private static Markdown markdown = new Markdown();
+        private static Markdown markdown = new Markdown()
+        {
+            ExtraMode = true,
+            FormatCodeBlock = FormatCode
+        };
 
         private static string EncodeTo64(string toEncode)
         {
@@ -113,6 +117,17 @@ namespace codestyle.co
             }
 
             return "Codestyle.co";
+        }
+
+        private static string FormatCode(Markdown m, string language, string code)
+        {
+            var builder = new StringBuilder()
+                .AppendLine("<fieldset>")
+                .AppendLine("<legend><small>Example</small></legend>")
+                .AppendLine(String.Format("<pre class='hljs'><code class='{1}'>{0}</code></pre>", code, language))
+                .AppendLine("</fieldset>");
+
+            return builder.ToString();
         }
 
         public static MvcHtmlString DisplayMarkdown(JToken section, string id)
