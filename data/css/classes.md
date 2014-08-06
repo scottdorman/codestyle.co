@@ -6,3 +6,15 @@
 - Use `.js-*` classes to denote behavior (as opposed to style), but keep these classes out of your CSS.
 
 It's also useful to apply many of these same rules when creating Sass and Less variable names.
+
+```css
+/* Bad example */
+.t { ... }
+.red { ... }
+.header { ... }
+ 
+/* Good example */
+.tweet { ... }
+.important { ... }
+.tweet-header { ... }
+```

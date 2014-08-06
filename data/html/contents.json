@@ -10,7 +10,6 @@
             "title": "Syntax",
             "shown": true,
             "markdown": "syntax.md",
-            "gistFile": "html-syntax.html",
             "links":  [
                 {
                     "url":  "http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag",
@@ -22,13 +21,11 @@
             "title": "HTML5 doctype",
             "shown": true,
             "markdown": "doctype.md",
-            "gistFile": "html-doctype.html"
         },
         {
             "title": "Language attribute",
             "shown": true,
             "markdown": "lang.md",
-            "gistFile": "html-lang.html",
             "links": [
                 {
                     "url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element",
@@ -44,7 +41,6 @@
             "title": "IE compatibility mode",
             "shown": true,
             "markdown": "ie-compatibility.md",
-            "gistFile": "html-ie-compatibility.html",
             "links": [
                 {
                     "url": "http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e",
@@ -56,13 +52,11 @@
             "title": "Character encoding",
             "shown": true,
             "markdown": "character-encoding.md",
-            "gistFile": "html-character-encoding.html"
         },
         {
             "title": "CSS and JavaScript includes",
             "shown": true,
             "markdown": "includes.md",
-            "gist": "html-includes.html",
             "links":  [
                 {
                     "url":  "http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element",
@@ -87,13 +81,11 @@
             "title": "Attribute order",
             "shown": true,
             "markdown": "attribute-order.md",
-            "gistFile": "html-attribute-order.html"
         },
         {
             "title": "Boolean attributes",
             "shown": true,
             "markdown": "boolean-attributes.md",
-            "gistFile": "html-boolean-attributes.html",
             "links": [
                 {
                     "url": "http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes",
@@ -105,7 +97,6 @@
             "title": "Reducing markup",
             "shown": true,
             "markdown": "reducing-markup.md",
-            "gistFile": "html-reducing-markup.html"
         },
         {
             "title": "JavaScript generated markup",

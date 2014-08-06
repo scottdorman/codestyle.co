@@ -1,7 +1,7 @@
 {
     "title": ".NET",
     "icon": "icon-prog-dotnet",
-     "attribution": {
+    "attribution": {
     	"url": "http://msdn.microsoft.com/en-us/library/ms229042(v=vs.110).aspx",
     	"title": "Adapted from the Framework Design Guidelines"
     },

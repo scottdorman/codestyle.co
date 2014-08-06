@@ -10,7 +10,6 @@
             "title": "Syntax",
             "shown": true,
             "markdown": "syntax.md",
-            "gistFile": "css-syntax.css",
             "links":  [
                 {
                     "url": "http://mathiasbynens.be/notes/unquoted-attribute-values#css",
@@ -26,7 +25,6 @@
             "title": "Declaration order",
             "shown": true,
             "markdown": "declaration-order.md",
-            "gistFile": "css-declaration-order.css",
             "links": [
                 {
                     "url": "http://twitter.github.com/recess",
@@ -38,7 +36,6 @@
             "title": "Don't use @import",
             "shown": true,
             "markdown": "import.md",
-            "gistFile": "css-import.css",
             "links": [
                 {
                     "url": "http://www.stevesouders.com/blog/2009/04/09/dont-use-import/",
@@ -50,25 +47,21 @@
             "title": "Media query placement",
             "shown": true,
             "markdown": "media-queries.md",
-            "gistFile": "css-media-queries.css"
         },
         {
             "title": "Prefixed properties",
             "shown": true,
             "markdown": "prefixed-properties.md",
-            "gistFile": "css-prefixed-properties.css"
         },
         {
             "title": "Rules with single declarations",
             "shown": true,
             "markdown": "single-declaration.md",
-            "gistFile": "css-single-declaration.css"
         },
         {
             "title": "Shorthand notation",
             "shown": true,
             "markdown": "shorthand.md",
-            "gistFile": "css-shorthand.css",
             "links": [
                 {
                     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties",
@@ -80,19 +73,16 @@
             "title": "Nesting in LESS and SASS",
             "shown": true,
             "markdown": "nesting.md",
-            "gistFile": "css-nesting.css"
         },
         {
             "title": "Classes",
             "shown": true,
             "markdown": "classes.md",
-            "gistFile": "css-classes.css"
         },
         {
             "title": "Selectors",
             "shown": true,
             "markdown": "selectors.md",
-            "gistFile": "css-selectors.css",
             "links": [
                 {
                     "url": "http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/",
@@ -108,7 +98,6 @@
             "title": "Organization",
             "shown": true,
             "markdown": "organization.md",
-            "gistFile": "css-organization.css"
         }
     ]
 }

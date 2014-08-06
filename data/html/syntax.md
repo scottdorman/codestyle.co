@@ -3,3 +3,16 @@
 - Always use double quotes, never single quotes, on attributes.
 - Don't include a trailing slash in self-closing elements&mdash;the HTML5 spec says they're optional.
 - Don't omit optional closing tags (e.g. `</li>` or `</body>`).
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page title</title>
+  </head>
+  <body>
+    <img src="images/company-logo.png" alt="Company">
+    <h1 class="hello-world">Hello, world!</h1>
+  </body>
+</html>
+```
