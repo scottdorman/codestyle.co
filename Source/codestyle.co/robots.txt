@@ -1,0 +1,10 @@
+# robots.txt
+User-agent: *
+Disallow: 
+Disallow: /App_Data/
+Disallow: /bin/
+Disallow: /Content/
+Disallow: /data/
+Disallow: /fonts/
+Disallow: /Scripts/
+Disallow: /Views/
