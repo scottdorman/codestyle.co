@@ -5,7 +5,7 @@ There are two ways to capitalize identifiers:
 - **PascalCasing** capitalizes the first character of each word, including acronyms. A special case is made for two-letter acronyms, in which both letters are capitalized.
 - **camelCasing** capitalizes the first character of each word except the first word. Two-letter acronyms that begin a camel-cased identifier are both lowercase.
 
-In general, PascalCasing should be used for all identifiers exept parameter names, which should use camelCasing. The following table shows the capitalization rules for different types of identifiers.
+In general, PascalCasing should be used for all identifiers except parameter names, which should use camelCasing. The following table shows the capitalization rules for different types of identifiers.
 
 <table class="table table-condensed">
 	<thead>
@@ -118,10 +118,10 @@ In general, PascalCasing should be used for all identifiers exept parameter name
 
 ## Class, Struct, Enumeration, and Interface Names
 
-- To distinguish classes and structs from methods, use nouns or noun phrases with PascalCasing. Intefaces should use adjective phrases. If a noun or noun phrase seems like the better name for an interface, it's likely that the interface should really be an abstract class instead.
+- To distinguish classes and structs from methods, use nouns or noun phrases with PascalCasing. Interfaces should use adjective phrases. If a noun or noun phrase seems like the better name for an interface, it's likely that the interface should really be an abstract class instead.
 - While interfaces start with an "I" prefix, classes should not start with a "C" prefix. When defining a class-interface pair, where the class is a standard implementation of the interface, make sure that the names differ only by the "I" prefix of the interface.
 - When creating a derived class, using the name of the base class as an ending suffix can help with readability and helps to clearly explain the class relationship. However, use reasonable judgement as it isn't always better.
-- Enumerations (also called enums) should follow all of the same naming rules as classes and structs, but should always be singular unless the values are bit fields (also called a flags enum), in which case the name should be pluaral.
+- Enumerations (also called enums) should follow all of the same naming rules as classes and structs, but should always be singular unless the values are bit fields (also called a flags enum), in which case the name should be plural.
 - Don't end an enumeration name with an "Enum", "Flag", or "Flags" suffix and don't use a prefix on the value names.
 - Generic type parameters should be descriptive and always start with a "T" prefix. If there is only a single type parameter, unless a single-letter name is completely self-explanatory and a descriptive name would not add value. However, if there is only a single type parameter, you can use "T" as the name.
 
