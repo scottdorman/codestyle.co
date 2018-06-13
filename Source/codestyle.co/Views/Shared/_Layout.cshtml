@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="~/apple-touch-icon.png" />
+    <title>@Helpers.GeneratePageTitle(ViewBag.Title)</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+    <script type="text/javascript">
+        window.google_analytics_uacct = "UA-2662385-2";
+    </script>
+    @Html.Partial("_AppInsights")
+</head>
+<body>
+    @Html.Partial("_MenuPartial")
+    <div>
+        @RenderBody()
+    </div>
+    @Html.Partial("_FooterPartial")
+    <div id='goup'></div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/smoothscroll")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(function () {
+            $.localScroll({ filter: '.smoothScroll' });
+            $('#goup').goup(
+                {
+                    imgsrc: "fa fa-arrow-up"
+                });
+            $('[data-toggle=tooltip]').tooltip();
+        });
+    </script>
+    @Html.Partial("_GoogleAnalytics")
+</body>
+</html>
