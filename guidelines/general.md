@@ -2,9 +2,6 @@
 layout: guideline
 title: General
 icon: "far fa-file-code"
-attribution:
-   url: "http://codeguide.co/#css"
-   title: "Adapted from codeguide.co"
 ---
 
 # Contents
