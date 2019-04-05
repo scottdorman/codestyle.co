@@ -1,0 +1,73 @@
+url: "https://codestyle.co/"
+ 
+sass:
+    style: compressed
+
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Scott Dorman
+  facebook: scottdorman
+  github: scottdorman
+  twitter: sdorman
+  linkedin: scottorman
+  stackoverflow: 1559
+  mvp: 4014220
+  vsmarketplace: ScottDorman
+
+# Select which links to show in the footer
+footer-links-active: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Output options (more information on Jekyll's site)
+encoding: UTF-8
+timezone: America/New_York
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+kramdown:
+  input: GFM
+  parse_block_html: true
+  
+google_analytics:
+   id: "UA-2662385-4"
+  
+defaults:
+  -
+    scope:
+      path: "guidelines"
+      type: "pages"
+    values:
+      nav-include: false  # include in header nav
+
+# SEO configuration
+
+twitter:
+  username: sdorman
+  card: summary
+
+social:
+  name: Scott Dorman
+  links:
+    - https://twitter.com/sdorman
+    - https://www.facebook.com/scottdorman
+    - https://www.linkedin.com/in/scottorman
+    - https://github.com/scottdorman
+    - https://stackoverflow.com/users/1559
+    - https://mvp.microsoft.com/en-us/PublicProfile/4014220
+
+# Exclude these files from production site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

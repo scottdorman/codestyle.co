@@ -1,0 +1,90 @@
+---
+layout: default
+title: Codestyle.co
+---
+
+<div class="jumbotron jumbotron-fluid text-center align-middle bg-dark text-white mb-0">
+	<blockquote class="container">
+		<p class="h2">
+		<i class="fas fa-quote-left"></i> Style is an often overlooked but very critical attribute of writing. The style of writing directly impacts the readability and understandability of the end product. <i class="fas fa-quote-right"></i>
+		</p>
+		<footer class="blockquote-footer text-white"><cite>Ada 95 Quality and Style: Guidelines for Professional Programmers. SPC-94093-CMC. Herndon, Virginia. p-1.</cite></footer>
+	</blockquote>
+</div>
+
+<section id="guidelines">
+	{%- comment -%}This is a workaround until GitHub upgrades to Jekyll 4.
+	This really should be
+	where_exp:"node", "node.title != null and node.layout == 'guideline' and node.nav-include != false"
+	{%- endcomment -%}
+	{%- assign guidelines_list = site.pages | where_exp:"node", "node.layout == 'guideline'" -%}
+	{%- assign guidelines_list = guidelines_list | where_exp:"node", "node.nav-include == false" -%}
+	{%- assign guidelines_list = guidelines_list | where_exp:"node", "node.title != null" -%}
+	<div class="container text-center">
+		<ul class="list-inline pt-4 mt-4">
+			{%- for guidelineData in guidelines_list -%}
+			{%- assign slug=guidelineData.slug | default: guidelineData.title -%}
+			<li class="list-inline-item spec-block px-3 my-3 border-bottom">
+				<a href="guidelines/{{ slug | slugify }}" title="{{ guidelineData.title }}">
+					{%- if guidelineData.icon -%}
+					<i class="icon {{ guidelineData.icon }}"></i>
+					{%- else -%}
+					<img class="icon icon-logo img-fluid" src="{{ site.url }}/assets/img/{{ guidelineData.logo }}"/>
+					{%- endif -%}
+					<p class="text-center text-muted">{{ guidelineData.title }}</p>
+				</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</div>
+</section>
+
+<div class="block text-center bg-light">
+	<div class="container">
+	  <div class="row my-4">
+		<div class="col-sm-6">
+		  <ul class="featured-list featured-list-bordered">
+			<li class="mb-5">
+			  <div class="featured-list-icon">
+				<i class="far fa-file-alt"></i>
+			  </div>
+			  <p>
+				A consistent, yet flexible, set of "best practices" designed to improve quality and readability while making code changes and maintenance easier.
+			  </p>
+			</li>
+
+			<li>
+			  <div class="featured-list-icon">
+				<i class="fas fa-code"></i>
+			  </div>
+			  <p>
+				Every line of code should appear to be written by a single person, no matter the number of contributors.
+			  </p>
+			</li>
+		  </ul>
+		</div>
+		<div class="col-sm-6">
+		  <ul class="featured-list featured-list-bordered">
+			<li class="mb-5">
+			  <div class="featured-list-icon">
+				<i class="far fa-file-code"></i>
+			  </div>
+			  <p>
+				If a file already has a consistent style, use that style rather than introducing inconsistencies.
+			  </p>
+			</li>
+
+			<li>
+			  <div class="featured-list-icon">
+				<i class="fas fa-project-diagram"></i>
+			  </div>
+			  <p>
+				The physical layout of source text on the page or screen has a strong effect on its readability. Proper structure improves program clarity.
+			  </p>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<a class="btn btn-primary" href="{{ site.url }}/about" role="button">Learn more about code standards and guidelines</a>
+</div>

@@ -1,0 +1,130 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge( ( "100": $gray-100, "200": $gray-200, "300": $gray-300, "400": $gray-400, "500": $gray-500, "600": $gray-600, "700": $gray-700, "800": $gray-800, "900": $gray-900 ), $grays );
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge( ( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-600, "gray-dark": $gray-800 ), $colors );
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge( ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark ), $theme-colors );
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+$text-color: $gray-900 !default;
+$link-color: darken($primary, 15%) !default;
+$link-highlight-color: darken($cyan, 5%);
+$navbar-bg-color: $light !default;
+$navbar-text-color: $gray-600 !default;
+$navbar-link-color: darken($navbar-text-color, 30%) !default;
+$navbar-brand-image-size: 2rem !default;
+$navbar-children-col: $navbar-bg-color !default;
+$page-color: $white !default;
+$footer-bg-color: $navbar-bg-color !default;
+$footer-text-color: $gray-600 !default;
+$footer-link-color: darken($footer-text-color, 30%) !default;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-md: ($font-size-base * 1.125) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+
+$border-width: 1px !default;
+$border-radius: 4px !default;
+$border-color: rgba($black,.125) !default;
+
+$card-img-overlay-width: 4.5rem !default;
+$image-header-padding: 0 !default;
+$image-header-image-height: 30rem !default;
+$image-header-image-width: 100% !default;
+$carousel-caption-padding: 0.25rem !default;
+$carousel-caption-bg: rgba(30, 30, 30, 0.6) !default;
+
+$content-top-margin: 10rem !default;
+$content-padding: 22rem !default;
+$content-post-padding: 2.5rem !default;
+
+$list-group-compressed-padding: 0.5rem !default;
+
+$post-title-size: $font-size-base * 2.25 !default;
+$post-subtitle-size: $font-size-base * 1.5 !default;
+
+$code-font-size: 90% !default;
+$code-padding: .5rem !default;
+$code-margin: .5rem !default;
+$code-color: $gray-900 !default;
+$code-bg: $gray-100 !default;
+
+$navbar-padding: 1.25rem !default;
+$avatar-img-width: 3.25rem !default;
+$avatar-margin-top: 1rem !default;
+
+$box-padding: 1rem !default;
+$box-margin: 1.25rem !default;
+$box-padding-y: .75rem !default;
+$box-padding-x: 1.25rem !default;
+$box-margin-bottom: 1rem !default;
+$box-border-radius: $border-radius !default;
+$box-link-font-weight: $font-weight-bold !default;
+$box-border-width: $border-width !default;
+
+$box-bg-level: -10 !default;
+$box-border-level: -5 !default;
+$box-color-level: 6 !default;
+
+$table-padding: 0.75rem;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+
+$z-layers: ( background: -9999, back: -1000, default: 1, dropdown: 3000, overlay: 4000, modal: 4001 );

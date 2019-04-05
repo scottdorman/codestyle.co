@@ -1,0 +1,30 @@
+﻿<header id="main-nav" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="{{ site.url }}"><img src="{{ site.url }}/assets/img/codestyle-full.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarCollapseContent" class="navbar-collapse collapse ">
+        <div class="navbar-nav ml-auto">
+            {%- if page.url == "/" -%}
+            {%- assign active_node = true -%}
+            {%- else -%}
+            {%- assign active_node = false -%}
+            {%- endif -%}
+
+            <a class="nav-item nav-link {% if active_node %}active{% endif %}" href="{{ site.url }}">Home{% if active_node %}<span class="sr-only"> (current)</span>{% endif %}</a>
+
+            {%- comment -%}This is a workaround until GitHub upgrades to Jekyll 4.
+            This really should be
+            where_exp:"node", "node.title != null and node.layout == 'page' and node.nav-include != false"
+            {%- endcomment -%}
+            {%- assign pages_list = site.pages | where_exp:"node", "node.layout == 'guideline'" -%}
+            {%- assign pages_list = pages_list | where_exp:"node", "node.nav-include != false" -%}
+            {%- assign pages_list = pages_list | where_exp:"node", "node.title != null" -%}
+            {%- for node in pages_list -%}
+            {%- if page.url == node.url -%}{%- assign active_node = true -%}{%- else -%}{%- assign active_node = false -%}{%- endif -%}
+            <a class="nav-item nav-link {% if active_node %} active{% endif %}" href="{{ node.url }}">{{ node.title }}{% if active_node %} <span class="sr-only">(current)</span>{% endif %}</a>
+            {%- endfor -%}
+        </div>
+    </div>
+</header>

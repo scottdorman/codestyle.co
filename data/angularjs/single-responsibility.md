@@ -1,1 +1,0 @@
-Defining a single component per file helps with code maintenance. Rather than defining a module (and its dependencies), a controller, and a factory all in the same file, separate each one into their own files.

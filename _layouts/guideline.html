@@ -1,0 +1,27 @@
+﻿---
+layout: default
+---
+
+<div class="jumbotron jumbotron-fluid text-center align-middle bg-dark mb-4">
+	{%- if page.icon or page.logo -%}
+	{%- if page.icon -%}
+	{% capture icon %}<span class="icon {{ page.icon }}"></span>{% endcapture %}
+	{%- else -%}
+	{% capture icon %}<img class="icon icon-logo img-fluid" src="{{ site.url }}/assets/img/{{ page.logo }}"/>{% endcapture %}
+	{%- endif -%}
+	{%- endif -%}
+	<h1 class="block-title text-white">{{ icon }} {{ page.title }}</h1>
+	<p class="text-white">{{ page.description }}</p>
+	<hr class="w-50 border-white"/>
+	{%- if page.attribution -%}
+		{%- if page.attribution.title -%}
+			<a class="text-white" href="{{ page.attribution.url }}" title="{{ page.attribution.title }}">{{ page.attribution.title }} <sup><i class="fas fa-external-link-alt"></i></sup></a>
+		{%- else -%}
+			<a class="text-white" href="{{ page.attribution.url }}"> {{ page.attribution.url }} <sup><i class="fas fa-external-link-alt"></i></sup></a>
+		{%- endif -%}
+	{%- endif -%}
+</div>
+
+<article class="container guideline-content" role="main">
+    {{ content }}
+</article>

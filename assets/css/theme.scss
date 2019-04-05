@@ -1,0 +1,93 @@
+---
+---
+
+@import "_variables";
+
+body {
+  padding-bottom: 20px;
+  padding-top: 3.7rem;
+  font-family: 'Montserrat',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+}
+
+.profile-header {
+    color: #333;
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid;
+
+    h1 {
+        font-weight: 300;
+        font-size: 70px;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
+
+.spec-block {
+    .icon {
+      font-size: 4em;
+      min-height: 60px;
+    }
+    .icon-logo {
+      height: 60px;
+    }
+}
+
+.social-links i {
+    padding: 12px;
+    font-size: 26px;
+}
+
+.guideline-content {
+   h1 {
+      position: relative;
+      padding: .25rem 1rem;
+      overflow: hidden;
+   }
+}
+
+pre {
+    padding: $code-padding;
+    margin-bottom: $code-margin;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: $border-radius;
+}
+
+code table {
+    &, & td, & th, & tbody, & tr, td.gutter pre {
+        padding: 0;
+        border: none;
+    }
+}
+
+.highlight {
+    > pre {
+        padding: 0;
+
+        &.highlight {
+            padding: $table-padding;
+        }
+    }
+}
+
+td {
+    &.code pre {
+        border-radius: 0;
+    }
+
+    &.gutter {
+        padding-top: $border-width * 0.9;
+    }
+}

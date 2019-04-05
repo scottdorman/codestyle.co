@@ -1,0 +1,38 @@
+{
+  "name": "jquery-gotop",
+  "version": "1.0.3",
+  "description": "goTop is a <2kb Scroll to Top jQuery plugin.",
+  "homepage": "http://scottdorman.github.io/jquery-gotop",
+  "main": "src/jquery.gotop.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "*.nupkg"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6",
+    "bootstrap": ">=3.0.0"
+  },
+  "authors": [
+    "Scott Dorman (https://github.com/scottdorman)"
+  ],
+  "keywords": [
+    "jquery-plugin",
+    "scroll",
+    "scrolltop",
+    "backtotop",
+    "scrolltotop",
+    "goup",
+    "gotop"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottdorman/jquery-gotop.git"
+  }
+}

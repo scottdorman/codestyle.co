@@ -1,0 +1,35 @@
+﻿<section>
+<h3 id="guide-{{ entry.title | slugify }}">{{ entry.title }}</h3>
+{{ entry.content }}
+
+{%- if entry.links or entry.remarks -%}
+<div class="card">
+  <div class="card-header">
+    Additional information
+  </div>
+  <div class="card-body">
+	{%- if entry.remarks -%}
+  	<fieldset>
+		<legend><small>Remarks</small></legend>
+		{{ entry.remarks }}
+  	</fieldset>
+	{%- endif -%}
+
+	{%- if entry.links -%}
+  	<fieldset>
+		<legend><small>See also</small></legend>
+		<ul class="list-inline">
+		{% for link in entry.links %}
+			{%- if link.title -%}
+				<a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }} <sup><i class="fas fa-external-link-alt"></i></sup></a>
+			{%- else -%}
+				<a href="{{ link.url }}"> {{ link.url }} <sup><i class="fas fa-external-link-alt"></i></sup></a>
+			{%- end if -%}
+		{% endfor %}
+		</ul>
+  	</fieldset>
+	{%- endif -%}
+  </div>
+</div>
+{%- endif -%}
+</section>
